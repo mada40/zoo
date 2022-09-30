@@ -20,6 +20,7 @@ int main()
     zoopark.add(cool_bird);
     zoopark.add(dog);
 
+
     std::cout << "\tLISTEN: \n";
     zoopark.listen();
     std::cout << "-----------------------------\n";
@@ -28,6 +29,9 @@ int main()
     zoopark.do_something();
     std::cout << "-----------------------------\n";
 
+    std::cout << "Count of bird: " << zoopark.get_count_bird() << "\n";
+
+    zoopark.erase(2);
     std::cout << "Count of bird: " << zoopark.get_count_bird() << "\n";
 
     delete Pin;

@@ -7,6 +7,14 @@ void Zoo::add(Animal* a)
 	animal.push_back(a);
 }
 
+void Zoo::erase(int i)
+{
+	if (i < 0 || i >= animal.size())
+		throw std::out_of_range("invalid index");
+
+	animal.erase(animal.begin() + i);
+}
+
 void Zoo::listen()
 {
 	for (auto a : animal)

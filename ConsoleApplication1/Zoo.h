@@ -8,6 +8,7 @@ private:
 
 public:
 	void add(Animal* a);
+	void erase(int i);
 	void listen();
 	void do_something();
 	int get_count_bird();
