@@ -9,7 +9,7 @@ Animal::Animal(const std::string& _name)
 
 Animal::~Animal()
 {
-	count_animals--;
+
 }
 
 std::string Animal::get_name()
